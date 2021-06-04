@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallary Css Demo</title>
+    <style>
+       #maintitle{
+           text-transform: capitalize;
+           color: red;
+           text-shadow: 5px 5px 5px black;
+           font-size: 48px;
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       }
+       header{
+            background: -webkit-linear-gradient(left, blue, steelblue, skyblue,steelblue, blue);
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        header img{
+            height: 100px;
+            border-radius: 50px;
+        }
+        #gallary{
+            display: flex;
+            width: 70%;
+            flex-wrap: wrap;
+            margin: 0px auto;
+        }
+        #gallary section{
+            width: 250px;
+            border: 1px solid red;
+            background-color: wheat;
+            margin: 10px;
+            box-shadow: 5px 5px 5px black;
+        }
+        #gallary section div{
+            text-align: center;
+            padding: 10px;
+        }
+        #gallary section div img{
+            height: 100px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div><img src="images/mobile14.jpg"/></div>
+        <div id="maintitle">product gallary</div>
+    </header>
+    <article id="gallary">
+        <section>
+            <div><img src="images/mobile1.jpg"/></div>
+            <div>
+                <ul>
+                    <li>Samsung Galaxy</li>
+                    <li class="offer">Price : Rs.15000</li>
+                    <li>Offer : Rs.8000</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div><img src="images/mobile2.jpg"/></div>
+            <div>
+                <ul>
+                    <li>REdmi Pro</li>
+                    <li  class="offer">Price : Rs.15000</li>
+                    <li>Offer : Rs.8000</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div><img src="images/mobile3.jpg"/></div>
+            <div>
+                <ul>
+                    <li>VIVO V8 Pro</li>
+                    <li  class="offer">Price : Rs.15000</li>
+                    <li>Offer : Rs.8000</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div><img src="images/mobile4.jpg"/></div>
+            <div>
+                <ul>
+                    <li>Nokia N70</li>
+                    <li  class="offer">Price : Rs.15000</li>
+                    <li>Offer : Rs.8000</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div><img src="images/mobile5.jpg"/></div>
+            <div>
+                <ul>
+                    <li>Samsung Note+</li>
+                    <li  class="offer">Price : Rs.15000</li>
+                    <li>Offer : Rs.8000</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div><img src="images/mobile6.jpg"/></div>
+            <div>
+                <ul>
+                    <li>Blackberry Curve</li>
+                    <li  class="offer">Price : Rs.15000</li>
+                    <li>Offer : Rs.8000</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div><img src="images/mobile7.jpg"/></div>
+            <div>
+                <ul>
+                    <li>iPhone Max Pro</li>
+                    <li  class="offer">Price : Rs.15000</li>
+                    <li>Offer : Rs.8000</li>
+                </ul>
+            </div>
+        </section>
+    </article>
+</body>
+</html>

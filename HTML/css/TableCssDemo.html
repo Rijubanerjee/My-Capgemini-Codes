@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Css Demo</title>
+    <style>
+        caption{
+            color: red;
+            font-size: 28px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-transform: capitalize;
+        }
+        th,td{
+            padding: 10px;
+        }
+        table{
+            margin: 0px auto;
+            border-collapse: collapse;
+        }
+        table thead tr:first-child{
+            background-color: red;
+            color: white;
+        }
+        table tfoot tr:last-child{
+            background-color: green;
+            color: white;
+        }
+        table tbody tr:nth-child(even){
+            background-color: orange;
+        }
+        table tbody tr:nth-child(odd){
+            background-color: wheat;
+        }
+        @media only screen and (max-width:600px){
+            thead, tfoot{
+                display: none;
+            }
+            th,td{
+                display: block;
+            }
+        }
+    </style>
+       
+</head>
+<body>
+    <h1>Table Css Demo</h1>
+    <hr/>
+    <table>
+        <caption>Product Price List</caption>
+        <thead>
+         <tr>
+             <th>Product ID</th>
+             <th>Product Name</th>
+             <th>Description</th>
+             <th>Price</th>
+         </tr>
+        
+        </thead>
+        <tbody>
+         <tr>
+             <td title="Samung galaxy and Rs.17,000">S1001</td>
+             <td>Samsung Galaxy</td>
+             <td>Loren ipsum Loren ipsum Loren ipsum Loren ipsum</td>
+             <td>Rs.17,000/-</td>
+         </tr>
+         <tr>
+            <td title="Samung note and Rs.27,000">S1002</td>
+            <td>Samsung Note+</td>
+            <td>Loren ipsum Loren ipsum Loren ipsum Loren ipsum</td>
+            <td>Rs.27,000/-</td>
+        </tr>
+        <tr title="iphone i7 and Rs.57,000">
+            <td>S1003</td>
+            <td>iphone i7</td>
+            <td>Loren ipsum Loren ipsum Loren ipsum Loren ipsum</td>
+            <td>Rs.57,000/-</td>
+        </tr>
+        <tr title="oppo 08 and Rs.37,000">
+            <td>S1004</td>
+            <td>oppo o8</td>
+            <td>Loren ipsum Loren ipsum Loren ipsum Loren ipsum</td>
+            <td>Rs.37,000/-</td>
+        </tr>
+        <tr title="nokia n7 and Rs.39,000">
+            <td>S1005</td>
+            <td>Nokia n7</td>
+            <td>Loren ipsum Loren ipsum Loren ipsum Loren ipsum</td>
+            <td>Rs.39,000/-</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr >
+            <td colspan="3">No Of Products</td>
+            <td>5</td>
+        </tr>
+    </tfoot>
+    </table>
+</body>
+</html>

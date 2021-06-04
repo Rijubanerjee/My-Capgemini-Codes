@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h1 class="text-center text-primary">Carousel Demo</h1>
+<hr/>
+<div id="demo" class="col-3  mx-auto carousel slide bg-dark" data-ride="carousel" data-interval="2000" >
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" ></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div  class= "carousel-inner" style="width:320px;height:250px">
+    <div class="carousel-item active text-center">
+      <img src="images/mobile1.jpg" height="200" width="200">
+    </div>
+    <div class="carousel-item text-center">
+      <img src="images/mobile2.jpg" height="200" width="200">
+    </div>
+    <div class="carousel-item text-center">
+      <img src="images/mobile3.jpg" height="200" width="200">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a  href="#demo" data-slide="prev" class="carousel-control-prev">
+    <span class="carousel-control-prev-icon" ></span>
+  </a>
+  <a  href="#demo" data-slide="next" class="carousel-control-next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+       <meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+       
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <h1>Collapsible demo</h1>
+            </div>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">simple collapsible</button>
+            <div id="demo"  style="width:150px">
+                 <h1>Brand</h1>
+                 <ul>
+                   <li>link1</li>
+                   <li>link2</li>
+                   <li>link3</li>
+                 </ul>
+            </div>
+
+<div id="accordion" >
+                <div class="card text-white bg-info">
+                    <div class="card-header">
+                        <div class="card-title" >	<a href="#first" data-toggle="collapse" data-parent="#accordion" class="text-white">First</a>
+                        </div>
+                    </div>
+                    <div class="collapse show" id="first">
+                        <div class="card-body">
+                            <p>Para-1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card text-white bg-info">
+                    <div class="card-header">
+                        <div class="card-title">	<a href="#second" data-toggle="collapse" data-parent="#accordion" class="text-white">Second</a>
+                        </div>
+                    </div>
+                    <div class="collapse" id="second">
+                        <div class="card-body">
+                            <p>Para-2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                   
+    </body>
+
+</html>

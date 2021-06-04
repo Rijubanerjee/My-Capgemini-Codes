@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font CSS Demo</title>
+    <style>
+        article{
+            display: flex;
+            justify-content: center;
+            width: 60%;
+            flex-wrap: wrap;
+        } 
+        article section{
+            height: 200px;
+            width: 250px;
+            border: 1px solid red;
+            margin: 2px;
+            text-align: center;
+            padding: 10px;
+        }
+        article section img{
+            height: 150px;
+            width: 200px;
+            transition: transform 2s;
+        }
+        #i2:hover{
+            transform: rotate(360deg);
+        }
+        #i1:hover{
+            transform: rotateX(180deg);
+        }
+        #i3:hover{
+            transform: rotateY(360deg);
+        }
+        #i4:hover{
+            transform: scale(1.5,1.5);
+        }
+        #i5:hover{
+            transform: scale(0.5,0.5);
+        }
+        #i6:hover{
+            transform: skew(60deg);
+        }
+    </style>  
+</head>
+<body>
+    <h1 id="maintitle">Transition css demo</h1>
+    <hr class="ruler"/>
+    <article>
+        <section><img id="i1" src="images/mobile1.jpg"/></section>
+        <section><img id="i2" src="images/mobile2.jpg"/></section>
+        <section><img id="i3" src="images/mobile3.jpg"/></section>
+        <section><img id="i4" src="images/mobile4.jpg"/></section>
+        <section><img id="i5" src="images/mobile5.jpg"/></section>
+        <section><img id="i6" src="images/mobile6.jpg"/></section>
+    </article>
+</body>
+</html>

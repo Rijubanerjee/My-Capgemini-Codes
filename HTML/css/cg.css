@@ -1,0 +1,28 @@
+header, footer{
+    text-align: center;
+    background: -webkit-linear-gradient(left, yellow, orange, red, green, blue);
+    padding: 10px;
+}
+#mtitle{
+    color: red;
+    text-shadow: 5px 5px 5px black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+}
+article{
+    display: flex;
+    min-height: 400px;
+    flex-wrap: wrap;
+}
+aside{
+    background-color: yellow;
+    border: 1px solid red;
+}
+aside img{
+    height: 200px;
+   
+    border-radius: 50px;
+}
+article section{
+    width: 70%;
+}
